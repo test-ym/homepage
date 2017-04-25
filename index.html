@@ -5,11 +5,49 @@
     <meta http-equiv="content-style-type" content="text/css">
     <meta http-equiv="content-script-type" content="tsxt/javascript">
     
+	<link rel="stylesheet" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(function() {
+  var h = $(window).height();
+ 
+  $('#wrap').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+  $('#wrap').css('display', 'block');
+});
+ 
+//10秒たったら強制的にロード画面を非表示
+$(function(){
+  setTimeout('stopload()',10000);
+});
+ 
+function stopload(){
+  $('#wrap').css('display','block');
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+}
+</script>
   </head>
   <body>
+	<div id="loader-bg">
+		<div id="loader">
+			<img src="images/load.gif" height="30px">
+			<p>Now Loading...</p>
+		</div>
+	</div>
+	<div idz="wrap">
+	<div id="midashi">
     <center>
       <h1>新宿山吹IT研究会</h1>
-      <h3>Shinjuku Yamabuki Information Technology Labolatory</h3>
+      <h3>Shinjuku Yamabuki Information Technology Labolatory</h3><br>
+		<p><a href="making/" id="a-trans">作ってるもの</a> | <a href="about/" id="a-trans">アバウト</a></p>
     </center>
+	</div>
+	</div>
   </body>
 </html>
