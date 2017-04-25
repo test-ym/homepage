@@ -20,12 +20,7 @@ $(window).load(function () { //全ての読み込みが完了したら実行
   $('#loader').delay(600).fadeOut(300);
   $('#wrap').css('display', 'block');
 });
- 
-//10秒たったら強制的にロード画面を非表示
-$(function(){
-  setTimeout('stopload()',10000);
-});
- 
+
 function stopload(){
   $('#wrap').css('display','block');
   $('#loader-bg').delay(900).fadeOut(800);
@@ -34,11 +29,22 @@ function stopload(){
 
 function onLinkClick1() {
 	$(function() {
-		$('#wrap').delay(900).fadeOut(800);
+		$('#wrap').delay().fadeOut();
+		$('#wrap').css('display','block');
+		$('#tukutteru').delay().fadeIn();
+	});
+	return false;
+}
+function onLinkClick2() {
+	$(function() {
+		$('#tukutteru').delay().fadeOut();
+		$('#tukutteru').css('display','block');
+		$('#wrap').delay().fadeIn();
 	});
 	return false;
 }
 </script>
+	<link rel="stylesheet" href="styles/font-awesome.min.css">
 <title>新宿山吹IT研究部</title>
   </head>
   <body>
@@ -48,7 +54,7 @@ function onLinkClick1() {
 			<p>Now Loading...</p>
 		</div>
 	</div>
-	<div idz="wrap">
+	<div id="wrap">
 	<div id="midashi">
     <center>
       <h1>新宿山吹IT研究会</h1>
@@ -56,6 +62,16 @@ function onLinkClick1() {
 		<p><a href="#" id="a-trans" onclick="onLinkClick1();">作ってるもの</a> | <a href="about/" id="a-trans">アバウト</a></p>
     </center>
 	</div>
+	</div>
+	<div id="tukutteru">
+		<center>
+			<i class="fa fa-code fa-5x" aria-hidden="true"></i>
+			<h2>現在開発中の作品</h2>
+		</center>
+		<center>
+		<p>現在、以下の作品を制作中です。</p><br><br>
+		<a href="#" id="a-trans2" onclick="onLinkClick2();"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a><br>
+		</center>
 	</div>
   </body>
 </html>
