@@ -6,7 +6,7 @@
     <meta http-equiv="content-script-type" content="tsxt/javascript">
     
 	<link rel="stylesheet" href="style.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="scripts/jquery.min.js"></script>
 <script>
 $(function() {
   var h = $(window).height();
@@ -31,7 +31,15 @@ function stopload(){
   $('#loader-bg').delay(900).fadeOut(800);
   $('#loader').delay(600).fadeOut(300);
 }
+
+function onLinkClick1() {
+	$(function() {
+		$('#wrap').delay(900).fadeOut(800);
+	});
+	return false;
+}
 </script>
+<title>新宿山吹IT研究部</title>
   </head>
   <body>
 	<div id="loader-bg">
@@ -45,7 +53,7 @@ function stopload(){
     <center>
       <h1>新宿山吹IT研究会</h1>
       <h3>Shinjuku Yamabuki Information Technology Labolatory</h3><br>
-		<p><a href="making/" id="a-trans">作ってるもの</a> | <a href="about/" id="a-trans">アバウト</a></p>
+		<p><a href="#" id="a-trans" onclick="onLinkClick1();">作ってるもの</a> | <a href="about/" id="a-trans">アバウト</a></p>
     </center>
 	</div>
 	</div>
