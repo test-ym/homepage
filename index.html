@@ -44,6 +44,23 @@ function onLinkClick2() {
 	});
 	return false;
 }
+
+function onLinkClick3() {
+	$(function() {
+		$('#about').delay().fadeOut();
+		$('#about').css('display','block');
+		$('#wrap').delay().fadeIn();
+	});
+	return false;
+}
+function onLinkClick4() {
+	$(function() {
+		$('#wrap').delay().fadeOut();
+		$('#wrap').css('display','block');
+		$('#about').delay().fadeIn();
+	});
+	return false;
+}
 </script>
 	<link rel="stylesheet" href="styles/font-awesome.min.css">
 <title>新宿山吹IT研究部</title>
@@ -60,12 +77,13 @@ function onLinkClick2() {
     <center>
       <h1>新宿山吹IT研究会</h1>
       <h3>Shinjuku Yamabuki Information Technology Labolatory</h3><br>
-		<p><a href="#" id="a-trans" onclick="onLinkClick1();">作ってるもの</a> | <a href="about/" id="a-trans">アバウト</a></p>
+		<p><a href="#" id="a-trans" onclick="onLinkClick1();">作ってるもの</a> | <a href="#" id="a-trans" onclick="onLinkClick4();">アバウト</a></p>
     </center>
 	</div>
 	</div>
 	<div id="tukutteru">
 		<center>
+			<br><br>
 			<i class="fa fa-code fa-5x" aria-hidden="true"></i>
 			<h2>現在開発中の作品</h2>
 		</center>
@@ -73,6 +91,20 @@ function onLinkClick2() {
 		<p>現在、以下の作品を制作中です。</p><br><br>
 		<a href="#" id="a-trans2" onclick="onLinkClick2();"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a><br>
 		</center>
+		<br><br>
+	</div>
+	<div id="about">
+		<center>
+			<br><br>
+			<i class="fa fa-users fa-5x" aria-hidden="true"></i>
+			<h2>新宿山吹IT研究会とは</h2>
+		</center>
+		<center>
+		<p>新宿山吹IT研究会とは、日々コンピュータ技術について模索しながら開発を進めている
+			<a href="http://www.yamabuki-hs.metro.tokyo.jp/site/tei/" id="a-trans">東京都立新宿山吹高等学校</a>の部活動です。</p><br><br>
+		<a href="#" id="a-trans2" onclick="onLinkClick3();"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a><br>
+		</center>
+		<br><br>
 	</div>
   </body>
 </html>
