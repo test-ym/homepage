@@ -61,11 +61,43 @@ function onLinkClick4() {
 	});
 	return false;
 }
+function onLinkClick5() {
+	$(function() {
+		$('#wrap').delay().fadeOut();
+		$('#wrap').css('display','block');
+		$('#giziroku').delay().fadeIn();
+	});
+	return false;
+}
+function onLinkClick6() {
+	$(function() {
+		$('#giziroku').delay().fadeOut();
+		$('#giziroku').css('display','block');
+		$('#wrap').delay().fadeIn();
+	});
+	return false;
+}
+function onLinkClick_20170427() {
+	$(function() {
+		$('#giziroku').delay().fadeOut();
+		$('#giziroku').css('display','block');
+		$('#g_20170427').delay().fadeIn();
+	});
+	return false;
+}
+function onLinkClick_20170427e() {
+	$(function() {
+		$('#g_20170427').delay().fadeOut();
+		$('#g_20170427').css('display','block');
+		$('#giziroku').delay().fadeIn();
+	});
+	return false;
+}
 </script>
-	<link rel="stylesheet" href="styles/font-awesome.min.css">
+<link rel="stylesheet" href="styles/font-awesome.min.css">
 <title>新宿山吹IT研究部</title>
   </head>
-  <body>
+  <body style="background-image: url('background.png');">
 	<div id="loader-bg">
 		<div id="loader">
 			<img src="images/load.gif" height="30px">
@@ -75,9 +107,9 @@ function onLinkClick4() {
 	<div id="wrap">
 	<div id="midashi">
     <center>
-      <h1>新宿山吹IT研究会</h1>
-      <h3>Shinjuku Yamabuki Information Technology Labolatory</h3><br>
-		<p><a href="#" id="a-trans" onclick="onLinkClick1();">作ってるもの</a> | <a href="#" id="a-trans" onclick="onLinkClick4();">アバウト</a></p>
+      <h1>新宿山吹IT研究部</h1>
+      <h3>Shinjuku Yamabuki Information Technology Laboratory</h3><br>
+		<p><a href="#" id="a-trans" onclick="onLinkClick1();">作ってるもの</a> | <a href="#" id="a-trans" onclick="onLinkClick4();">アバウト</a> | <a href="#" id="a-trans" onclick="onLinkClick5();">議事録</a></p>
     </center>
 	</div>
 	</div>
@@ -88,8 +120,27 @@ function onLinkClick4() {
 			<h2>現在開発中の作品</h2>
 		</center>
 		<center>
-		<p>現在、以下の作品を制作中です。</p><br><br>
+		<p>現在、以下の作品を制作中です。</p>
+		<li>ホームページ制作</li>
+		<li>ガチャゲー開発</li>
 		<a href="#" id="a-trans2" onclick="onLinkClick2();"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a><br>
+		</center>
+		<br><br>
+	</div>
+	<div id="giziroku">
+		<center>
+			<br><br>
+			<i class="fa fa-file-text fa-5x" aria-hidden="true"></i>
+			<h2>議事録</h2>
+		</center>
+		<center>
+		<p>以下が議事録です。見たい議事録を選んでください。</p><br><br>
+		<table border="0">
+		<tr><th>日付</th></tr>
+		<tr><td><a href="#" id="a-trans" onclick="onLinkClick_20170427();">2017年4月27日</td></tr>
+		</table>
+		<br><br>
+		<a href="#" id="a-trans2" onclick="onLinkClick6();"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a><br>
 		</center>
 		<br><br>
 	</div>
@@ -97,14 +148,30 @@ function onLinkClick4() {
 		<center>
 			<br><br>
 			<i class="fa fa-users fa-5x" aria-hidden="true"></i>
-			<h2>新宿山吹IT研究会とは</h2>
+			<h2>新宿山吹IT研究部とは</h2>
 		</center>
 		<center>
-		<p>新宿山吹IT研究会とは、日々コンピュータ技術について模索しながら開発を進めている
+		<p>日々コンピュータ技術について模索しながら開発を進めている
 			<a href="http://www.yamabuki-hs.metro.tokyo.jp/site/tei/" id="a-trans">東京都立新宿山吹高等学校</a>の部活動です。</p><br><br>
 		<a href="#" id="a-trans2" onclick="onLinkClick3();"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a><br>
 		</center>
 		<br><br>
+	</div>
+
+	<!-- 議事録スペース -->
+	<div id="g_20170427">
+		<center>
+			<br><br>
+			<i class="fa fa-users fa-5x" aria-hidden="true"></i>
+			<h2>議事録(2017年4月27日)</h2>
+		</center>
+		<center>
+		<p>今年のIT研究部では、例年とは違い多くの技術者が参入したため、<br>
+		１２月頃に行われる文化祭に向けて何か作ることになりました。<br></p>
+		<a href="#" id="a-trans2" onclick="onLinkClick_20170427e();"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a><br>
+		</center>
+		<br><br>
+	</div>
 	</div>
   </body>
 </html>
