@@ -1,5 +1,5 @@
 body {
-	background-image: url(images/background.png);
+	background-image: url("background.png");
 }
 
 #midashi {
@@ -49,10 +49,41 @@ body {
 	background: rgba(0,0,0,0.5);
 	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 	border-radius: 10px;
-   -webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
 	color: white;
 }
+
+#giziroku {
+	display: none;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 80%;
+	height: auto;
+	background: rgba(0,0,0,0.5);
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+	border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+	color: white;
+}
+
+#g_20170427 {
+	display: none;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 80%;
+	height: auto;
+	background: rgba(0,0,0,0.5);
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+	border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+	color: white;
+}
+
 #loader-bg {
   display: none;
   position: fixed;
@@ -89,5 +120,3 @@ body {
 	text-decoration: none;
 	font-weight: 900;
 }
-#giziroku { display: none; position: absolute; top: 20%; left: 10%; width: 80%; height: auto; background: rgba(0,0,0,0.5); box-shadow: 10px 10px 10px rgba(0,0,0,0.4); border-radius: 10px;   -webkit-border-radius: 10px;   -moz-border-radius: 10px; color: white;}
-#g_20170427 { display: none; position: absolute; top: 20%; left: 10%; width: 80%; height: auto; background: rgba(0,0,0,0.5); box-shadow: 10px 10px 10px rgba(0,0,0,0.4); border-radius: 10px;   -webkit-border-radius: 10px;   -moz-border-radius: 10px; color: white;}
