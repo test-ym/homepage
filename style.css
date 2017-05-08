@@ -119,6 +119,7 @@
 }
 
 #button1 {
+	position: absolute;
 	transition: 0.5s;
 	color: white;
 	text-decoration: none;
