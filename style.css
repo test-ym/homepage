@@ -117,3 +117,14 @@
 	text-decoration: none;
 	font-weight: 900;
 }
+
+#button1 {
+	transition: 0.5s;
+	color: white;
+	text-decoration: none;
+	background: none;
+	border: 0.8px solid white;
+	padding: 0.9em;
+	width: auto;
+	height: auto;
+]
