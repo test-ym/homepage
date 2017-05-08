@@ -128,3 +128,14 @@
 	width: auto;
 	height: auto;
 ]
+
+#button1:hover {
+	transition: 0.5s;
+	color: black;
+	text-decoration: none;
+	background: white;
+	border: 0.8px solid white;
+	padding: 0.9em;
+	width: auto;
+	height: auto;
+]
