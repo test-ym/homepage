@@ -71,6 +71,8 @@
 	display: none;
 	position: absolute;
 	width: 80%;
+        left: 10%;
+        top: 20%;
 	height: auto;
 	background: rgba(0,0,0,0.5);
 	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
@@ -85,8 +87,6 @@
 	transition: 0.5s;
 	display: none;
 	position: absolute;
-	top: 0%;
-	left: 0%;
 	height: auto;
 	background: rgba(0,0,0,0.5);
 	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
