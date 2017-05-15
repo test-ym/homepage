@@ -69,7 +69,7 @@
 #g_20170427 {
 	transition: 0.5s;
 	display: none;
-	position: absolute;
+	position: relative;
 	width: 100%;
         left: 0%;
 	height: auto;
