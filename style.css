@@ -95,7 +95,35 @@
   	-moz-border-radius: 0px;
 	color: white;
 }
+#g_20170511 {
+	transition: 0.5s;
+	display: none;
+	position: relative;
+	width: 100%;
+        left: 0%;
+	height: auto;
+	background: rgba(0,0,0,0.5);
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+	font-size: 12px;
+	border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+	color: white;
+}
 
+#g_20170511:hover {
+	transition: 0.5s;
+	display: none;
+	position: absolute;
+	height: auto;
+	background: rgba(0,0,0,0.5);
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+	border-radius: 0px;
+	font-size: 20px;
+  	-webkit-border-radius: 0px;
+  	-moz-border-radius: 0px;
+	color: white;
+}
 #loader-bg {
   display: none;
   position: fixed;
