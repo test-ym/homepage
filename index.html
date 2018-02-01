@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- SEO対策 -->
+    <meta name="description" content="新宿山吹IT研究部は、毎週火曜日と木曜日に集まって、情報テクノロジーの世界の開拓に向けて活動しています。" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="新宿山吹研究部" />
+    <meta property="og:title" content="ホーム" />
+    <meta property="og:description" content="新宿山吹IT研究部は、毎週火曜日と木曜日に集まって、情報テクノロジーの世界の開拓に向けて活動しています。" />
+
+    <title>Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Import Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+
+    <!-- Import FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Import Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113412923-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113412923-1');
+</script>
+
+    <script type="text/javascript">
+      $(function(){
+
+        // サイトアクセス時に非表示にしてから、フェードインさせる
+        $('#wrapper').hide();
+        $('#wrapper').fadeIn(1000);
+
+        // リンククリック時にフェードアウトしてから、画面遷移する
+        $('a').click(function(){
+          // URLを取得する
+          var url = $(this).attr('href');
+
+          // URLが空ではない場合
+          if (url != '') {
+            // フェードアウトしてから、取得したURLにリンクする
+            $('#wrapper').fadeOut(1000);
+              setTimeout(function(){
+                location.href = url;
+            }, 1000);
+            }
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+    <nav style="">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#!" class="brand-logo">SYIRC</a>
+          <p data-target="mobilemenu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="blog/">Blog</a></li>
+          </ul>
+          <ul class="sidenav" id="mobilemenu">
+            <li><a href="blog/">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+    </script>
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/slide1.jpg">
+          <div class="caption center-align">
+            <h3>新宿山吹IT研究部</h3>
+            <h5 class="light grey-text text-lighten-3">見つける、創り出す。</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider2.jpg">
+          <div class="caption center-align">
+          </div>
+        </li>
+      </ul>
+    </div>
+      <script>
+        $(document).ready(function(){
+          $('.slider').slider();
+        });
+      </script>
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>Feature</h3>
+          </div>
+          <div class="col s12 m4">
+            <center>
+              <i class="fas fa-users fa-7x"></i>
+              <h4>People</h4>
+            </center>
+            <p>
+              現在7人の部員がIT研究部におり、少数ながらも各自様々な研究を行っています。部員同士の会話も絶えません。
+            </p>
+          </div>
+          <div class="col s12 m4">
+            <center>
+              <i class="fas fa-desktop fa-7x"></i>
+              <h4>Environment</h4>
+            </center>
+            <p>新宿山吹高校のコンピュータの環境は他校と比べてずば抜けて良い環境です。他校ではできないことができる、自信があります。自分の端末を持ち寄って活動することも可能です。</p>
+          </div>
+          <div class="col s12 m4">
+            <center>
+              <h3>More...</h3>
+            </center>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.7775165130806!2d139.7259717150984!3d35.70709218018832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cfe3d378d6b%3A0x7485a90f3f5ae73e!2z5p2x5Lqs6YO956uL5paw5a6_5bGx5ZC56auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1517472419694" width="100%" height="480px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="col s12 m6">
+            <table>
+              <tr><td><b>活動場所</b><br>東京都新宿区山吹町81<br>東京都立新宿山吹高等学校第3パソコン室</td></tr>
+              <tr><td><b>部員</b><br>7名</td></tr>
+              <tr><td><b>PCスペック</b><br><b>CPU</b>:Intel Core i5-6500 CPU @ 3.20GHz<br><b>RAM</b>:8GB<br><b>グラフィック</b>:NVIDIA GeForce GTX 745</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <center>新宿山吹IT研究部</center>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

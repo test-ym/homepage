@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- SEO対策 -->
+    <meta name="description" content="新宿山吹IT研究部は、毎週火曜日と木曜日に集まって、情報テクノロジーの世界の開拓に向けて活動しています。" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="新宿山吹研究部" />
+    <meta property="og:title" content="Blog" />
+    <meta property="og:description" content="新宿山吹IT研究部は、毎週火曜日と木曜日に集まって、情報テクノロジーの世界の開拓に向けて活動しています。" />
+
+    <title>ブログ - 新宿山吹IT研究部</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Import Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+
+    <!-- Import FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Import Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113412923-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113412923-1');
+</script>
+
+    <script type="text/javascript">
+      $(function(){
+
+        // サイトアクセス時に非表示にしてから、フェードインさせる
+        $('#wrapper').hide();
+        $('#wrapper').fadeIn(1000);
+
+        // リンククリック時にフェードアウトしてから、画面遷移する
+        $('a').click(function(){
+          // URLを取得する
+          var url = $(this).attr('href');
+
+          // URLが空ではない場合
+          if (url != '') {
+            // フェードアウトしてから、取得したURLにリンクする
+            $('#wrapper').fadeOut(1000);
+              setTimeout(function(){
+                location.href = url;
+            }, 1000);
+            }
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+    <nav style="">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="../" class="brand-logo">SYIRC</a>
+          <p data-target="mobilemenu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="blog/">Blog</a></li>
+          </ul>
+          <ul class="sidenav" id="mobilemenu">
+            <li><a href="blog/">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+    </script>
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="../img/slide1.jpg">
+          <div class="caption center-align">
+            <h3>新宿山吹IT研究部</h3>
+            <h5 class="light grey-text text-lighten-3">見つける、創り出す。</h5>
+          </div>
+        </li>
+        <li>
+          <img src="../img/slider2.jpg">
+          <div class="caption center-align">
+          </div>
+        </li>
+      </ul>
+    </div>
+      <script>
+        $(document).ready(function(){
+          $('.slider').slider();
+        });
+      </script>
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h3>Blog</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m3">
+            <img src="../img/slide1.jpg" width="100%" height="auto">
+          </div>
+          <div class="col s12 m9">
+            <a href="2018020101.html"><h2>ブログはじめました。</h2></a>
+            <p>2018年2月1日にアップロードされました。</p><br>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
